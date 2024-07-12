@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background:url(image/34461.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: url(image/physical-paper-book-background-closeup_58702-6685.avif);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container.p{
+    color: #f0f0f0;
+}
+
+/* .btn{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn{
+    background-color: #ff6b72;
+    text-align: center;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+} */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+input[type="email"],
+input[type="password"],
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #09bafa;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0074f0;
+}
+.p{
+    color: #0074f0;
+}

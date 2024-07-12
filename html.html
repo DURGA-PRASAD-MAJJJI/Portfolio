@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <tittle></tittle>
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/03-05-2024 10_39_48.png" class='logo' alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <span id="skill-set">Web Developer</span>
+                <h1>Hi,I'm <br><span id="name"></div></span>
+            </div>
+        </div>
+    </div>
+<!--about me  -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/17080005271381.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Myself</h1>
+                <p>I'm a Computer Science student with experience as a Web developer, and I'm actively exploring Artificial intelligence(AI) & Machine Learning alongside my web development projects.
+                    In addition to web development, I am actively exploring the integration of Machine Learning into web applications, aiming to enhance user experiences and provide data-driven solutions.
+                    Passionate about Frontend and Backend technologies.
+                    I have a strong inclination for collaboration, enjoying the opportunity to work with others.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Computer_Languages</p>
+                        <p class="tab-links" onclick="opentab('Certifications')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>C</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>Java</span></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Certifications">
+                        <ul>
+                            <li><span><a href="image/New folder/23L35A5414(EDX.pdf">Data Analytics basics for everyone - EDX</a></span></li>
+                            <li><span><a href="image/New folder/23L35A5414(Java core&Adv(SSSI)).pdf">Java Core - SSI</a></span></li>
+                            <li><span><a href="image/New folder/23L35A5414(Python Essentials 1).pdf">Python Essentials 1 - CISCO</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>SSC</span><br>ZPHS HUKUMPETA</li>
+                            <li><span>Diploma</span><br>Godavari Institute of Engineering and Technology</li>
+                            <li><span>B.tech(Ongoing)</span><br>Vignan's Institute of Information Technology (VIIT)</li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------projects------------------------------ -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">MY PROJECTS</h1>
+        <div class="Project-List">
+            <div class="Project">
+                <img src="image/PROJECT-1(image slider).png">
+                <div class="layer">
+                    <h2>Image Slider</h2>
+                    <p>image slider is a common component used to display a series of images in a visually appealing way</p>
+                    <a href="image slider/image_slider.html" ><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="Project">
+                <img src="image/PROJECT-2(sports buddy).png">
+                <div class="layer">
+                    <h2>Sports Buddy</h2>
+                    <p>Sports Buddy application will upload details on various sports information, locations, and times that are held near the user's location</p>
+                    <a href="Sports Buddy/main.html" ><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="Project">
+                <img src="image/PROJECT-3(secure documents).png">
+                <div class="layer">
+                    <h2>Secure & Share Govt Document with Family Members</h2>
+                    <p>Citizens will be able to keep documents such as mark sheets, PAN cards, passports, and other important documents in digital format as a result of this advancement</p>
+                    <a href="new project/register.html" ><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn"> See More</a>
+    </div>
+</div>
+<!-- ----------------------contects---------------------- -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fas fa-paper-plane"></i>durgaprasadmajji65@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i></i>6305015997</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/majji-durga-prasad-234a2b2a2/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/DURGA-PRASAD-MAJJJI"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="image/Name of the student.pdf" download class="btn btnew">DOWNLOAD MY RESUME</a>
+            </div>  
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email " required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btnew">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        
+        </div>    
+    </div>
+</div>
+<div class="copyrights">
+    <p>Portflio <span>@</span> Durga Prasad Majji</p>
+
+</div>
+</div>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#name', {
+      strings: ['<span class="sred" >D</span>urga <span class="sred" >P</span>rasad <span class="sred" >M</span>ajji'],
+      typeSpeed: 50,
+    //   backSpeed:50,
+    //   loop: true,
+    //  loopCount: Infinity,
+    });
+
+    var typed = new Typed('#skill-set', {
+      strings: ['Web Developer','Competitive Programmer'],
+      typeSpeed: 20,
+      delay:5,
+      backSpeed:20,
+      loop: true,
+     loopCount: Infinity,
+    });
+
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var menu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        menu.style.right="0";
+    }
+    function closemenu(){
+        menu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwpu8nk68_lqDAsbp6wmrD38SZdWTlQKVR022aZEfEq1JGSJyRq1BZW9esIt_1idrq9/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="MESSAGE HAS BEEN SEND"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>

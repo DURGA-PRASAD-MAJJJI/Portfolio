@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure & Share Govt Document with Family Members</title>
+    <!-- <link rel="stylesheet" href="CSS.css">
+    <script type="module" src="javascript.js" defer></script> -->
+    <style>
+        .container {
+            width: 302px;
+            height: 175px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+        }
+
+        #number,
+        #veried_code {
+            width: calc(100% - 24px);
+            padding: 10px;
+            font-size: 20px;
+            margin-bottom: 5px;
+            outline: none;
+        }
+
+        #recaptcha-container {
+            margin-top: 5px;
+        }
+
+        #send,
+        #verifed {
+            width: 100%;
+            height: 40px;
+            outline: none;
+        }
+
+        .p-conf,
+        .n-conf {
+            width: calc(100% - 22px);
+            border: 2px solid green;
+            border-radius: 4px;
+            padding: 8px 10px;
+            margin: 4px 0px;
+            background-color: rgba(0, 249, 12, 0.5);
+            display: none;
+        }
+
+        .n-conf {
+            border-color: red;
+            background-color: rgba(0, 249, 12, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="sender">
+            <input type="text" id="number" placeholder="+91 XXXXXXXXXX">
+            <!-- <div id="recaptcha-container"></div> -->
+            <input type="button" id="send" value="send">
+        </div>
+        <div id="verified" style="display: none;">
+            <input type="text" id="veried_code" placeholder="OTP VERIFED">
+            <input type="button" id="verifed" value="verify">
+            <div class="p-conf">Number verifed</div>
+            <div class="n-conf">OTP ERROR</div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+
+    <script src="js.js">    </script>
+</body>
+
+</html>
